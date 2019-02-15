@@ -12,6 +12,7 @@ namespace Sample.JobApp
         public MessageJob(ILogger<MessageJob> logger)
         {
             _logger = logger;
+            _logger.LogInformation("初始化成功测试。");
         }
 
         public Task ExecuteAsync()
